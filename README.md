@@ -3,7 +3,7 @@
 ## Directory
 
 <pre>
-.
+./
 ├── 2021
 │    ├── day1
 │    ├── day2

@@ -1,12 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import sys
-import myfunc
+import RationalChild as RationalChild
 
 
 def main():
-  print('kadai4-1')
-  print('√5 = ' + str(myfunc.solve_sqrt(5)))
+  x = RationalChild.RationalChild(5, 10)
+  print(x)
+  x.show()
+  print(x ** 2)
 
 
 if __name__ == "__main__":

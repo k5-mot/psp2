@@ -1,7 +1,9 @@
-# mymodule4.py
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 def gcd(p, q):
-  """pとqとの最大公倍数
+  """
+  pとqとの最大公倍数
   """
   while p % q != 0:
     old_p = p

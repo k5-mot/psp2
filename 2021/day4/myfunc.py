@@ -7,19 +7,17 @@ def solve_sqrt(num):
   error_limit = 0.001
   for n in range(n_loop):
     try:
-      epsilon = (x**2 - num) / (2 * x)
+      epsilon = (x ** 2 - num) / (2 * x)
     except ZeroDivisionError:
       x = 'stopped'
       break
     else:
       x_next = x - epsilon
-      if (x_next - x)**2 < error_limit:
+      if (x_next - x) ** 2 < error_limit:
         break
       x = x_next
     finally:
       pass
-  # print(x)
-
   return x
 
 

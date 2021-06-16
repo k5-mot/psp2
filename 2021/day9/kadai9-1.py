@@ -9,22 +9,33 @@ import pandas as pd
 
 def main():
   # Prepare data
-  t = np.linspace(-2 * np.pi, 2 * np.pi, int(1e4))
-  f = np.sin(t)
+  df = pd.read_csv('./csv/score.csv')
   # Prepare graph
-  fig, axes = plt.subplots(1, 1)
+  fig, axes = plt.subplots(2, 2)
   # Setup figure
-  fig.suptitle("Main Title", fontsize=16)
+  fig.suptitle("Score", fontsize=16)
   # Setup axes.
-  axes.set_title("Graph Title")
-  axes.set_xlabel("t")
-  axes.set_ylabel("f(t)")
-  axes.plot(t, f, color="blue", label="f(t)")
-  axes.grid(b=True, which="both", axis="both", color="black", alpha=0.5, linestyle="-", linewidth=1)
-  axes.legend(loc=0, frameon=True)
+  axes[0, 0].set_title("Heights of Male")
+  axes[0, 0].set_xlabel("height[cm]")
+  axes[0, 0].set_ylabel("frequency")
+  axes[0, 0].hist(df[df['gender'] == 0]['height'])
+  axes[0, 0].grid(b=True, which="both", axis="both", color="black", alpha=0.5, linestyle="-", linewidth=1)
+
+  axes[0, 1].set_title("Heights of Female")
+  axes[0, 1].set_xlabel("height[cm]")
+  axes[0, 1].set_ylabel("frequency")
+  axes[0, 1].hist(df[df['gender'] == 1]['height'])
+  axes[0, 1].grid(b=True, which="both", axis="both", color="black", alpha=0.5, linestyle="-", linewidth=1)
+
+  # axes[0, 1].set_title("Gender")
+  # axes[0, 1].set_xlabel("height[cm]")
+  # axes[0, 1].set_ylabel("frequency")
+  # #axes[0, 1].hist(df[['height']])
+  # df[['gender']].value_counts().plot(kind='bar', ax=axes[0, 1])
+  # axes[0, 1].grid(b=True, which="both", axis="both", color="black", alpha=0.5, linestyle="-", linewidth=1)
   # Display graph
   plt.tight_layout()
-  plt.savefig("images/kadai9-1.png")
+  plt.savefig("./images/kadai9-1.png")
   plt.show()
 
 

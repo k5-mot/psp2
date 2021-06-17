@@ -2,11 +2,10 @@
 
 ## kadai1-1
 
-ソースコードの手数は増えない。
-
-|raster                             |vector                             |
-|:---:                              |:---:                              |
-|![raster_6](./images/raster_6.png) |![vector_6](./images/vector_6.png) |
+|表現法 |ラスター画像                        |線ベクトル画像                       |
+|:---: |:---:                              |:---:                              |
+|画像   |![raster_6](./images/raster_6.png) |![vector_6](./images/vector_6.png) |
+|手数|増えない|増えない|
 
 ## kadai1-2
 
@@ -32,11 +31,10 @@
 
 ## kadai1-3
 
-ソースコードの手数は増えない。
-
-|raster                             |vector                             |
-|:---:                              |:---:                              |
-|![raster_9](./images/raster_9.png) |![vector_9](./images/vector_9.png) |
+|表現法 |ラスター画像                        |線ベクトル画像                       |
+|:---: |:---:                              |:---:                              |
+|画像   |![raster_9](./images/raster_9.png) |![vector_9](./images/vector_9.png) |
+|手数|増える|増えない|
 
 ## kadai1-4
 

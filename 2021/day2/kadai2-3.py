@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from turtle import *
+import turtle
 import math
 
 
@@ -23,11 +23,15 @@ def look(x, y):
     kame.right(angle)
 
 
-# キャンバスを作って，亀kameを召喚
-kame = Turtle()
+kame = turtle.Turtle()
 kame.shape('turtle')
-kame.color('red', 'yellow')
+kame.color('cyan', 'red')
 kame.pensize(33)
 
-onscreenclick(look)
-done()
+turtle.onscreenclick(look)
+
+ts = turtle.getscreen()
+tc = ts.getcanvas()
+tc.postscript(file="images/look.eps", colormode='color')
+
+turtle.done()

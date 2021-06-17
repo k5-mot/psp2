@@ -1,17 +1,23 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from turtle import *
+import turtle
 
-kame = Turtle()  # キャンバスを作って，亀kameを召喚
 
-kame.shape('turtle')
-kame.color('red', 'yellow')
-kame.pensize(33)  # ペンのサイズを33とする
+def star(edge_len):
+  for k in range(5):
+    kame.forward(edge_len)
+    kame.right(144)
+    kame.forward(edge_len)
+    kame.left(72)
 
-for k in range(5):
-  kame.forward(200)
-  kame.right(90 + 54)  # 星形の先は36度
-  kame.forward(200)
-  kame.left(72)
 
-done()
+kame = turtle.Turtle()
+kame.pensize(10)
+
+star(100)
+
+ts = turtle.getscreen()
+tc = ts.getcanvas()
+tc.postscript(file="images/star.eps", colormode='color')
+
+turtle.done()

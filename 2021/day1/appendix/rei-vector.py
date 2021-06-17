@@ -2,17 +2,36 @@
 # -*- coding: utf-8 -*-
 import turtle
 
-kame = turtle.Turtle()   # キャンバスを作って，亀kameを召喚
+kame = turtle.Turtle()
+turtle.hideturtle()
 
-kame.pensize(33)         # ペンのサイズを33とする
-kame.forward(66)         # kameを66ピクセル直進させる
-kame.left(90)            # kameを左回りに90度回転させる
-kame.forward(132)
-kame.left(90)
-kame.forward(66)
-kame.left(90)
-kame.forward(66)
-kame.left(90)
-kame.forward(66)
+radius = 33
+vector_6 = [
+    [2, 2, 0, 2],
+    [0, 2, 0, 0],
+    [0, 0, 2, 0],
+    [2, 0, 2, 4],
+    [2, 4, 0, 4]
+]
+
+minx = min([row[0] for row in vector_6] + [row[2] for row in vector_6])
+maxx = max([row[0] for row in vector_6] + [row[2] for row in vector_6])
+miny = min([row[1] for row in vector_6] + [row[3] for row in vector_6])
+maxy = max([row[1] for row in vector_6] + [row[3] for row in vector_6])
+startx = -(maxx - minx) / 2 * radius
+starty = (maxy - miny) / 2 * radius
+
+kame.pensize(radius)
+kame.penup()
+
+for i in range(len(vector_6)):
+  kame.goto(vector_6[i][0] * radius + startx, -vector_6[i][1] * radius + starty)
+  kame.pendown()
+  kame.goto(vector_6[i][2] * radius + startx, -vector_6[i][3] * radius + starty)
+  kame.penup()
+
+ts = turtle.getscreen()
+tc = ts.getcanvas()
+tc.postscript(file="../images/vector_9.eps", colormode='color')
 
 turtle.done()

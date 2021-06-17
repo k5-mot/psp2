@@ -3,55 +3,32 @@
 import turtle
 
 kame = turtle.Turtle()
+turtle.hideturtle()
 
-kame.penup()       # ペンを持ち上げておく
+radius = 33
+raster_6 = [
+    [1, 1, 1],
+    [1, 0, 1],
+    [1, 1, 1],
+    [0, 0, 1],
+    [1, 1, 1]
+]
 
-kame.goto(0, 132)  # 座標(0,132)に行く
-kame.dot(33)       # そこで太さ33のペンを下ろす
+startx = -radius * (len(raster_6[0]) - 1) / 2
+starty = radius * (len(raster_6) - 1) / 2
+
+kame.pensize(radius)
 kame.penup()
 
-kame.goto(33, 132)
-kame.dot(33)
-kame.penup()
+for i in range(len(raster_6)):
+  for j in range(len(raster_6[i])):
+    if raster_6[i][j] == 1:
+      kame.goto(startx + radius * j, starty - radius * i)
+      kame.dot(radius)
+      kame.penup()
 
-kame.goto(66, 132)
-kame.dot(33)
-kame.penup()
-
-kame.goto(0, 99)
-kame.dot(33)
-kame.penup()
-
-kame.goto(66, 99)
-kame.dot(33)
-kame.penup()
-
-kame.goto(0, 66)
-kame.dot(33)
-kame.penup()
-
-kame.goto(33, 66)
-kame.dot(33)
-kame.penup()
-
-kame.goto(66, 66)
-kame.dot(33)
-kame.penup()
-
-kame.goto(66, 33)
-kame.dot(33)
-kame.penup()
-
-kame.goto(0, 0)
-kame.dot(33)
-kame.penup()
-
-kame.goto(33, 0)
-kame.dot(33)
-kame.penup()
-
-kame.goto(66, 0)
-kame.dot(33)
-kame.penup()
+ts = turtle.getscreen()
+tc = ts.getcanvas()
+tc.postscript(file="../images/raster_9.eps", colormode='color')
 
 turtle.done()

@@ -32,6 +32,6 @@ for i in range(len(vector_9)):
 
 ts = turtle.getscreen()
 tc = ts.getcanvas()
-tc.postscript(file="images/vector_9.eps", colormode='color')
+tc.postscript(file="images/vector_9_2scale.eps", colormode='color')
 
 turtle.done()

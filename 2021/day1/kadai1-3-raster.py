@@ -34,6 +34,6 @@ for i in range(len(raster_9)):
 
 ts = turtle.getscreen()
 tc = ts.getcanvas()
-tc.postscript(file="images/raster_9.eps", colormode='color')
+tc.postscript(file="images/raster_9_2scale.eps", colormode='color')
 
 turtle.done()

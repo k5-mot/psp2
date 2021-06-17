@@ -29,4 +29,8 @@ for i in range(len(vector_9)):
   kame.goto(vector_9[i][2] * radius + startx, -vector_9[i][3] * radius + starty)
   kame.penup()
 
+ts = turtle.getscreen()
+tc = ts.getcanvas()
+tc.postscript(file="images/vector_9.eps", colormode='color')
+
 turtle.done()

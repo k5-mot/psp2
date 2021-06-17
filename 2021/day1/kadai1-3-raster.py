@@ -18,8 +18,8 @@ raster_9 = [
     [1, 1, 1, 1, 1, 1],
 ]
 
-startx = -radius * (len(raster_9[0]) // 2)
-starty = radius * (len(raster_9) // 2)
+startx = -radius * (len(raster_9[0]) - 1) / 2
+starty = radius * (len(raster_9) - 1) / 2
 
 kame.pensize(radius)
 kame.penup()
@@ -30,5 +30,9 @@ for i in range(len(raster_9)):
       kame.goto(startx + radius * j, starty - radius * i)
       kame.dot(radius)
       kame.penup()
+
+ts = turtle.getscreen()
+tc = ts.getcanvas()
+tc.postscript(file="images/raster_9.eps", colormode='color')
 
 turtle.done()

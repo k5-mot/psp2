@@ -6,9 +6,7 @@ import RationalChild as RationalChild
 
 def main():
   x = RationalChild.RationalChild(5, 10)
-  print(x)
-  x.show()
-  print(x ** 2)
+  print("x ^ 2 = " + str(x ** 2))
 
 
 if __name__ == "__main__":

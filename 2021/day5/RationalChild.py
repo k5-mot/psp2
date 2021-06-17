@@ -23,9 +23,6 @@ def pow(x, y):
 
 
 class RationalChild(Rational.Rational):
-  def __str__(self):
-    return str(self.num) + '÷' + str(self.den)
-
   def show(self):
     print('分子=', self.num)
     print('分母=', self.den)

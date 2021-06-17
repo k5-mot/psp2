@@ -4,7 +4,7 @@ import pandas as pd
 pd.set_option('display.unicode.east_asian_width', True)
 
 # Read database.
-df = pd.read_csv('mydata2.csv', index_col=0, skipinitialspace=True)
+df = pd.read_csv('csv/mydata2.csv', index_col=0, skipinitialspace=True)
 
 # Categorize database
 listCelery = list(['extremelyHate', 'Hate', 'Regular', 'Like', 'extremelyLike'])

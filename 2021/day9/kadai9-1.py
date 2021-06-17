@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import sys
-import numpy as np
-import matplotlib as mpl
 import matplotlib.pyplot as plt
 import pandas as pd
 
@@ -13,7 +11,6 @@ def main():
   # Categorize database
   listScore = list(['D', 'C', 'B', 'A'])
   df['score'] = pd.Categorical(df['score'], categories=listScore, ordered=True)
-  #df = df.sort_values('score')
   df['scoreValue'] = df['score'].cat.codes
   # Prepare graph
   fig, axes = plt.subplots(2, 2)

@@ -4,7 +4,7 @@ import pandas as pd
 pd.set_option('display.unicode.east_asian_width', True)
 
 # Read database.
-df = pd.read_csv('mydata2.csv', index_col=0)
+df = pd.read_csv('csv/mydata2.csv', index_col=0)
 
 # Categorize database
 df['所持金額'] = df['所持金の増加（差）'] / (df['所持金の増加（比）'] - 1)
@@ -13,8 +13,8 @@ df['所持金額'] = df['所持金の増加（差）'] / (df['所持金の増加
 means_lion = df[df['好きな動物'] == 'ライオン']['所持金額'].mean()
 means_nook = df[df['好きな動物'] == 'たぬき']['所持金額'].mean()
 
-print('ライオンの所持金平均: ' + str(means_lion))
-print('たぬきの所持金平均  : ' + str(means_nook))
+print('「ライオン」の所持金平均: ' + str(means_lion))
+print('「たぬき」の所持金平均  : ' + str(means_nook))
 print()
 
 if means_lion < means_nook:

@@ -12,6 +12,7 @@ def star(edge_len):
 
 
 kame = turtle.Turtle()
+turtle.hideturtle()
 kame.pensize(10)
 
 star(100)

@@ -24,8 +24,9 @@ def look(x, y):
 
 
 kame = turtle.Turtle()
+turtle.hideturtle()
 kame.shape('turtle')
-kame.color('cyan', 'red')
+kame.color('red', 'black')
 kame.pensize(33)
 
 turtle.onscreenclick(look)

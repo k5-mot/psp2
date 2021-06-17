@@ -3,6 +3,7 @@
 import turtle
 
 kame = turtle.Turtle()
+turtle.hideturtle()
 
 radius = 33
 vector_9 = [

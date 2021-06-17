@@ -17,7 +17,7 @@ def polygon(N):
 
 
 kame = turtle.Turtle()
-
+turtle.hideturtle()
 kame.pensize(10)
 
 polygon(5)

@@ -2,14 +2,21 @@ import sys
 from PIL import Image
 
 
-def main(argv):
-  image_eps = argv[1]
+def eps2png(src, dst):
+  image_eps = src
   im = Image.open(image_eps)
 
   fig = im.convert('RGBA')
 
-  image_png = argv[2]
+  image_png = dst
   fig.save(image_png, lossless=True)
+
+
+def main(argv):
+  eps2png("./images/raster_6.eps", "./images/raster_6.png")
+  eps2png("./images/vector_6.eps", "./images/vector_6.png")
+  eps2png("./images/raster_9.eps", "./images/raster_9.png")
+  eps2png("./images/vector_9.eps", "./images/vector_9.png")
 
 
 if __name__ == "__main__":

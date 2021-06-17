@@ -4,6 +4,9 @@
 
 ソースコードの手数は増えない。
 
+![raster_6](./images/raster_6.png)
+![vector_6](./images/vector_6.png)
+
 ## kadai1-2
 
 * 「6」のラスター画像
@@ -29,6 +32,9 @@
 ## kadai1-3
 
 ソースコードの手数は増えない。
+
+![raster_9](./images/raster_9.png)
+![vector_9](./images/vector_9.png)
 
 ## kadai1-4
 

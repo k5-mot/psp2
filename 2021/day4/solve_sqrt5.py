@@ -5,7 +5,6 @@ import myfunc
 
 
 def main():
-  print('kadai4-1')
   print('√5 = ' + str(myfunc.solve_sqrt(5)))
 
 

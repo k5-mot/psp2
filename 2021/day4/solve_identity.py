@@ -13,7 +13,6 @@ def FuncTwo(x):
 
 
 def main():
-  print('kadai4-2')
   xList = [-3, 3]     # 初期値のリスト
   nLoop = int(1e4)    # 繰り返し回数
   errorLimit = 1e-10  # 解の収束判定条件

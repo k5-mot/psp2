@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import sys
-from turtle import *
+import turtle
 import math
 
 
@@ -26,11 +25,15 @@ def come(x, y):
   kame.forward(length)
 
 
-# キャンバスを作って，亀kameを召喚
-kame = Turtle()
+kame = turtle.Turtle()
+turtle.hideturtle()
 kame.shape('turtle')
-kame.color('red', 'yellow')
 kame.pensize(10)
 
-onscreenclick(come)
-done()
+turtle.onscreenclick(come)
+
+ts = turtle.getscreen()
+tc = ts.getcanvas()
+tc.postscript(file="images/come.eps", colormode='color')
+
+turtle.done()

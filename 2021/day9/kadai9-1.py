@@ -12,6 +12,7 @@ def main():
   listScore = list(['D', 'C', 'B', 'A'])
   df['score'] = pd.Categorical(df['score'], categories=listScore, ordered=True)
   df['scoreValue'] = df['score'].cat.codes
+  df = df.sort_values('score', ascending=False)
   # Prepare graph
   fig, axes = plt.subplots(2, 2)
   # Setup figure
@@ -29,16 +30,20 @@ def main():
   axes[0, 1].hist(df[df['gender'] == 1]['height'])
   axes[0, 1].grid(b=True, which="both", axis="both", color="black", alpha=0.5, linestyle="-", linewidth=1)
 
-  axes[1, 0].set_title("Heights & Scores of Male")
+  axes[1, 0].set_title("Heights & Scores of Male & Female")
   axes[1, 0].set_xlabel("score")
-  axes[1, 0].set_ylabel("heights")
-  axes[1, 0].scatter(x=df[df['gender'] == 0]['score'], y=df[df['gender'] == 0]['height'])
+  axes[1, 0].set_ylabel("height")
+  axes[1, 0].scatter(x=df[df['gender'] == 0]['score'], y=df[df['gender'] == 0]['height'], label='Male')
+  axes[1, 0].scatter(x=df[df['gender'] == 1]['score'], y=df[df['gender'] == 1]['height'], label='Female')
+  axes[1, 0].legend()
   axes[1, 0].grid(b=True, which="both", axis="both", color="black", alpha=0.5, linestyle="-", linewidth=1)
 
-  axes[1, 1].set_title("Heights & Scores of Female")
+  axes[1, 1].set_title("Ages & heights of Male & Female")
   axes[1, 1].set_xlabel("score")
-  axes[1, 1].set_ylabel("heights")
-  axes[1, 1].scatter(x=df[df['gender'] == 1]['score'], y=df[df['gender'] == 1]['height'])
+  axes[1, 1].set_ylabel("height")
+  axes[1, 1].scatter(x=df[df['gender'] == 0]['age'], y=df[df['gender'] == 0]['height'], label='Male')
+  axes[1, 1].scatter(x=df[df['gender'] == 1]['age'], y=df[df['gender'] == 1]['height'], label='Female')
+  axes[1, 1].legend()
   axes[1, 1].grid(b=True, which="both", axis="both", color="black", alpha=0.5, linestyle="-", linewidth=1)
 
   # Display graph

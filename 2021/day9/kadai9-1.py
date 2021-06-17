@@ -13,6 +13,7 @@ def main():
   df['score'] = pd.Categorical(df['score'], categories=listScore, ordered=True)
   df['scoreValue'] = df['score'].cat.codes
   df = df.sort_values('score', ascending=False)
+  df['age'].astype('int')
   # Prepare graph
   fig, axes = plt.subplots(2, 2)
   # Setup figure
@@ -39,7 +40,8 @@ def main():
   axes[1, 0].grid(b=True, which="both", axis="both", color="black", alpha=0.5, linestyle="-", linewidth=1)
 
   axes[1, 1].set_title("Ages & heights of Male & Female")
-  axes[1, 1].set_xlabel("score")
+  axes[1, 1].set_xlabel("age")
+  axes[1, 1].set_xticks([17, 18, 19, 20])
   axes[1, 1].set_ylabel("height")
   axes[1, 1].scatter(x=df[df['gender'] == 0]['age'], y=df[df['gender'] == 0]['height'], label='Male')
   axes[1, 1].scatter(x=df[df['gender'] == 1]['age'], y=df[df['gender'] == 1]['height'], label='Female')

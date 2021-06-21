@@ -16,6 +16,9 @@ TurtleGraphics 3
 $ python .\d03.py.py
 ```
 
+<!--
 ![come_init](./images/come.png)
+-->
 
 ![come_tran](./images/come_sample.png)
+

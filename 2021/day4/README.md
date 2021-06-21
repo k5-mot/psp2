@@ -1,6 +1,14 @@
 # day4
 
+function、module
+
 ## kadai4-1
+
+### 問題
+
+5の平方根を求めよ。
+
+### 回答
 
 ```powershell
 $ python solve_sqrt5.py
@@ -8,6 +16,12 @@ $ python solve_sqrt5.py
 ```
 
 ## kadai4-2
+
+### 問題
+
+恒等式をも引数にして、適当な恒等式の解を求めよ。
+
+### 回答
 
 ```powershell
 $ python .\solve_identity.py

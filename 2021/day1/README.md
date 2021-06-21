@@ -1,10 +1,13 @@
 # day1
 
+TurtleGraphics 1
+
 ## rei
 
 |表現法 |ラスター画像                       |線ベクトル画像                     |
 |:---: |:---:                               |:---:                              |
 |画像   |![raster_9](./images/raster_9.png) |![vector_9](./images/vector_9.png) |
+|コード|appendix/rei-raster.py              |appendix/rei-vector.py|
 
 * 「9」のラスター画像
 
@@ -38,6 +41,7 @@
 |表現法 |ラスター画像                       |線ベクトル画像                     |
 |:---:  |:---:                              |:---:                              |
 |画像   |![raster_6](./images/raster_6.png) |![vector_6](./images/vector_6.png) |
+|コード|kadai1-1-raster.py              |kadai1-1-vector.py|
 |手数   |増えない                           |増えない                           |
 
 ## kadai1-2
@@ -79,6 +83,7 @@
 |表現法 |ラスター画像                              |線ベクトル画像                            |
 |:---:  |:---:                                     |:---:                                     |
 |画像   |![raster_9](./images/raster_9_2scale.png) |![vector_9](./images/vector_9_2scale.png) |
+|コード|kadai1-3-raster.py              |kadai1-3-vector.py|
 |手数   |増える                                    |増えない                                  |
 
 ## kadai1-4

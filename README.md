@@ -11,7 +11,6 @@
 │    ├── day4
 │    ├── day5
 │    ├── day6
-│    ├── day6
 │    ├── day6_v2
 │    └── day9
 └── README.md

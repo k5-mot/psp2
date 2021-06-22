@@ -5,7 +5,7 @@ TurtleGraphics 1
 ## rei
 
 |表現法 |ラスター画像                       |線ベクトル画像                     |
-|:---: |:---:                               |:---:                              |
+|:---:  |:---:                               |:---:                              |
 |画像   |![raster_9](./images/raster_9.png) |![vector_9](./images/vector_9.png) |
 |コード|appendix/rei-raster.py              |appendix/rei-vector.py|
 
@@ -82,7 +82,7 @@ TurtleGraphics 1
 
 |表現法 |ラスター画像                              |線ベクトル画像                            |
 |:---:  |:---:                                     |:---:                                     |
-|画像   |![raster_9](./images/raster_9_2scale.png) |![vector_9](./images/vector_9_2scale.png) |
+|画像   |![raster_9](./images/raster_9_2times.png) |![vector_9](./images/vector_9_2times.png) |
 |コード|kadai1-3-raster.py              |kadai1-3-vector.py|
 |手数   |増える                                    |増えない                                  |
 

@@ -17,8 +17,8 @@ def main(argv):
   eps2png("./images/vector_6.eps", "./images/vector_6.png")
   eps2png("./images/raster_9.eps", "./images/raster_9.png")
   eps2png("./images/vector_9.eps", "./images/vector_9.png")
-  eps2png("./images/raster_9_2scale.eps", "./images/raster_9_2scale.png")
-  eps2png("./images/vector_9_2scale.eps", "./images/vector_9_2scale.png")
+  eps2png("./images/raster_9_2times.eps", "./images/raster_9_2times.png")
+  eps2png("./images/vector_9_2times.eps", "./images/vector_9_2times.png")
 
 
 if __name__ == "__main__":

@@ -16,7 +16,7 @@ pandas
 ### 回答
 
 ```powershell
-$ python .\kadai6-1.py
+$ python kadai6-1.py
 ライオン
   第 1 四分位数 ( 25% ) = 1.5
   第 3 四分位数 ( 75% ) = 2.5
@@ -38,7 +38,7 @@ $ python .\kadai6-1.py
 ### 回答
 
 ```powershell
-$ python .\kadai6-2.py
+$ python kadai6-2.py
 「ライオン」の所持金平均: 150999.99999999985
 「たぬき」の所持金平均  : 26999.999999999978
 

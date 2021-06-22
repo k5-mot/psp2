@@ -19,6 +19,6 @@ star(100)
 
 ts = turtle.getscreen()
 tc = ts.getcanvas()
-tc.postscript(file="images/star.eps", colormode='color')
+tc.postscript(file="./images/star.eps", colormode='color')
 
 turtle.done()

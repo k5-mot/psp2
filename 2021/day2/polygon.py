@@ -24,6 +24,6 @@ polygon(5)
 
 ts = turtle.getscreen()
 tc = ts.getcanvas()
-tc.postscript(file="images/pentagon.eps", colormode='color')
+tc.postscript(file="./images/pentagon.eps", colormode='color')
 
 turtle.done()

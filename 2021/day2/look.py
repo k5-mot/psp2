@@ -26,13 +26,12 @@ def look(x, y):
 kame = turtle.Turtle()
 turtle.hideturtle()
 kame.shape('turtle')
-kame.color('red', 'black')
 kame.pensize(33)
 
 turtle.onscreenclick(look)
 
 ts = turtle.getscreen()
 tc = ts.getcanvas()
-tc.postscript(file="images/look.eps", colormode='color')
+tc.postscript(file="./images/look.eps", colormode='color')
 
 turtle.done()

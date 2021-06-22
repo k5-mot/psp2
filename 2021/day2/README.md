@@ -11,7 +11,7 @@ TurtleGraphics 2
 ### 回答
 
 ```powershell
-$ python .\kadai2-1.py
+$ python star.py
 ```
 
 ![star](./images/star.png)
@@ -25,7 +25,7 @@ $ python .\kadai2-1.py
 ### 回答
 
 ```powershell
-$ python .\kadai2-2.py
+$ python polygon.py
 ```
 
 ![pentagon](./images/pentagon.png)
@@ -39,7 +39,7 @@ $ python .\kadai2-2.py
 ### 回答
 
 ```powershell
-$ python .\kadai2-3.py
+$ python look.py
 ```
 
 ![look](./images/look.png)

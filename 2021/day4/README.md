@@ -24,7 +24,7 @@ $ python solve_sqrt5.py
 ### 回答
 
 ```powershell
-$ python .\solve_identity.py
+$ python solve_identity.py
 x^2 - 3 = 0
 x = -1.7320508073432779, 1.7320508127206147
 

@@ -13,7 +13,7 @@ TurtleGraphics 3
 ### 回答
 
 ```powershell
-$ python .\d03.py.py
+$ python d03.py.py
 ```
 
 <!--

@@ -7,7 +7,7 @@ TurtleGraphics 1
 |表現法 |ラスター画像                       |線ベクトル画像                     |
 |:---:  |:---:                               |:---:                              |
 |画像   |![raster_9](./images/raster_9.png) |![vector_9](./images/vector_9.png) |
-|コード|appendix/rei-raster.py              |appendix/rei-vector.py|
+|コード|raster-9.py              |vector-9.py|
 
 * 「9」のラスター画像
 
@@ -41,7 +41,7 @@ TurtleGraphics 1
 |表現法 |ラスター画像                       |線ベクトル画像                     |
 |:---:  |:---:                              |:---:                              |
 |画像   |![raster_6](./images/raster_6.png) |![vector_6](./images/vector_6.png) |
-|コード|kadai1-1-raster.py              |kadai1-1-vector.py|
+|コード|raster-6.py              |vector-6.py|
 |手数   |増えない                           |増えない                           |
 
 ## kadai1-2
@@ -83,7 +83,7 @@ TurtleGraphics 1
 |表現法 |ラスター画像                              |線ベクトル画像                            |
 |:---:  |:---:                                     |:---:                                     |
 |画像   |![raster_9](./images/raster_9_2times.png) |![vector_9](./images/vector_9_2times.png) |
-|コード|kadai1-3-raster.py              |kadai1-3-vector.py|
+|コード|raster-9-2times.py              |vector-9-2times.py|
 |手数   |増える                                    |増えない                                  |
 
 ## kadai1-4

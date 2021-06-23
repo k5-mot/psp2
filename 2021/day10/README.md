@@ -6,15 +6,26 @@ numpy
 
 ### 問題
 
+<img src="" />
+
 連立方程式
 
 <img src="https://latex.codecogs.com/gif.latex?x&space;&plus;&space;2&space;y&space;=&space;3" />
 
+<img src="https://latex.codecogs.com/gif.latex?5x&space;&plus;&space;7y&space;=&space;9" />
 
-[tex:{x + 2 y = 3}]\\
-[tex:{5 x + 7 y = 9}]\\
-
-の解となる$x$と$y$を求めよ。連立方程式は、写像と同じであり、ベクトル$\mathbb{a}=(x,y)$が写像行列$\mathbb{M}=\begin{bmatrix}1&amp;2\\5&amp;7\end{bmatrix}$によってベクトル$\mathbb{b}=(3,9)$に移されたことをあらわす。
+の解となる
+<img src="https://latex.codecogs.com/gif.latex?x" />
+と
+<img src="https://latex.codecogs.com/gif.latex?y" />
+を求めよ。
+連立方程式は、写像と同じであり、
+ベクトル
+<img src="https://latex.codecogs.com/gif.latex?\bm{a}=(x,y)" />
+が写像行列
+<img src="https://latex.codecogs.com/gif.latex?M=\begin{bmatrix}&space;1&space;&&space;2&space;\\&space;5&space;&&space;7&space;\\&space;\end{bmatrix}" />
+によって
+ベクトル$\mathbb{b}=(3,9)$に移されたことをあらわす。
 
 $ \mathbb{M}\mathbb{a} = \mathbb{b} $
 

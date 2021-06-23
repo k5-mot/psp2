@@ -8,6 +8,9 @@ numpy
 
 連立方程式
 
+<img src="https://latex.codecogs.com/gif.latex?x&space;&plus;&space;2&space;y&space;=&space;3" />
+
+
 [tex:{x + 2 y = 3}]\\
 [tex:{5 x + 7 y = 9}]\\
 

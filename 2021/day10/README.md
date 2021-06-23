@@ -6,7 +6,6 @@ numpy
 
 ### 問題
 
-<img src="" />
 
 連立方程式
 
@@ -21,23 +20,34 @@ numpy
 を求めよ。
 連立方程式は、写像と同じであり、
 ベクトル
-<img src="https://latex.codecogs.com/gif.latex?\bm{a}=(x,y)" />
+<img src="https://latex.codecogs.com/gif.latex?\boldsymbol{a}=(x,y)" />
 が写像行列
 <img src="https://latex.codecogs.com/gif.latex?M=\begin{bmatrix}&space;1&space;&&space;2&space;\\&space;5&space;&&space;7&space;\\&space;\end{bmatrix}" />
 によって
-ベクトル$\mathbb{b}=(3,9)$に移されたことをあらわす。
+ベクトル
+<img src="https://latex.codecogs.com/gif.latex?\boldsymbol{b}=(3,9)" />
+に移されたことをあらわす。
 
-$ \mathbb{M}\mathbb{a} = \mathbb{b} $
+<img src="https://latex.codecogs.com/gif.latex?M\boldsymbol{a}=\boldsymbol{b}" />
+
 
 よって、線形代数によると係数行列の逆行列が存在すれば、
+<img src="https://latex.codecogs.com/gif.latex?\boldsymbol{a}=M^{-1}\boldsymbol{b}" />
 
-$ \mathbb{a} = \mathbb{M}^{-1} \mathbb{b} $
-
-により、解$\mathbb{a}=(x,y)$を求めることができる。
+により、解
+<img src="https://latex.codecogs.com/gif.latex?\boldsymbol{a}=(x,y)" />
+を求めることができる。
 
 numpyには行列を引数に与えると逆行列を求める関数があるので（自分で調べよ）、
 
-「行列$\mathbb{M}$と行列$\mathbb{b}$を引数に与えると、解$\mathbb{a}$を返す関数」を自作し、それを用いて上記の連立方程式を解くpythonコードを作成せよ。
+「行列
+<img src="https://latex.codecogs.com/gif.latex?M" />
+と行列
+<img src="https://latex.codecogs.com/gif.latex?b" />
+を引数に与えると、解
+<img src="https://latex.codecogs.com/gif.latex?a" />
+を返す関数」を自作し、
+それを用いて上記の連立方程式を解くpythonコードを作成せよ。
 
 ### 回答
 
@@ -58,41 +68,53 @@ b =
 
 ### 問題
 
-
-    1 → 3
-    2 → 5
-    3 → 7
-    4 → 9
+<img src="https://latex.codecogs.com/gif.latex?1&space;\rightarrow&space;3\\&space;2&space;\rightarrow&space;5\\&space;3&space;\rightarrow&space;7\\&space;4&space;\rightarrow&space;9" />
+<img src="https://latex.codecogs.com/gif.latex?10&space;\rightarrow&space;?" />
 
 のとき、10はどうなるか？
 
-    10 →　？
+<img src="https://latex.codecogs.com/gif.latex?10&space;\rightarrow&space;?" />
 
-まず、入力$x$と出力出力$y$を繋ぐモデル式（適当な係数と、入出力の使い方）を作る。
+まず、入力
+<img src="https://latex.codecogs.com/gif.latex?x" />
+
+と出力出力
+<img src="https://latex.codecogs.com/gif.latex?y" />
+を繋ぐモデル式（適当な係数と、入出力の使い方）を作る。
 
 今、パターンが４つわかっているので、入力を４つの未知変数に拡張し、４つの未知係数を用いて
 
-$ y = a x^3 + b x^2 + c x + d $
+<img src="https://latex.codecogs.com/gif.latex?y&space;=&space;a&space;x^{3}&space;&plus;&space;b&space;x^{2}&space;&plus;&space;c&space;x&space;&plus;&space;d" />
 
-などとしてみる。係数$a,b,c,d$の3次式モデルである。未知変数への拡張のしかたは他にもいくらでも考えられる。
+などとしてみる。係数
+<img src="https://latex.codecogs.com/gif.latex?a,b,c,d" />
 
-$ y = a x^{-3} + b x^{-2} + c x^{-1} + d $
+の3次式モデルである。未知変数への拡張のしかたは他にもいくらでも考えられる。
+<img src="https://latex.codecogs.com/gif.latex?y&space;=&space;a&space;x^{-3}&space;&plus;&space;b&space;x^{-2}&space;&plus;&space;c&space;x^{-1}&space;&plus;&space;d" />
 
 のようなモデル式でもいいだろう。
 
-ひとまず３次式モデルとすると、与えられた４つのパターンは
-
-$ \begin{bmatrix} 1 &amp; 1 &amp; 1 &amp; 1\\ 8 &amp; 4 &amp; 2 &amp; 1\\ 27 &amp; 9 &amp; 3 &amp; 1\\ 64 &amp; 16 &amp; 4 &amp; 1 \end{bmatrix} \begin{bmatrix} a\\ b\\ c\\ d \end{bmatrix} = \begin{bmatrix} 3\\ 5\\ 7\\ 9 \end{bmatrix} $
+ひとまず3次式モデルとすると、与えられた４つのパターンは
+<img src="https://latex.codecogs.com/gif.latex?\begin{bmatrix}&space;1&1&1&1\\&space;8&4&2&1\\&space;27&9&3&1\\&space;64&16&4&1&space;\end{bmatrix}&space;\begin{bmatrix}&space;a\\b\\c\\d&space;\end{bmatrix}&space;=&space;\begin{bmatrix}&space;3\\5\\7\\9&space;\end{bmatrix}" />
 
 と書くことができる。よって係数は
+<img src="https://latex.codecogs.com/gif.latex?\begin{bmatrix}&space;a\\b\\c\\d&space;\end{bmatrix}&space;=&space;\begin{bmatrix}&space;1&1&1&1\\&space;8&4&2&1\\&space;27&9&3&1\\&space;64&16&4&1&space;\end{bmatrix}^{-1}&space;\begin{bmatrix}&space;3\\5\\7\\9&space;\end{bmatrix}" />
 
-$ \begin{bmatrix} a\\ b\\ c\\ d \end{bmatrix} = \begin{bmatrix} 1 &amp; 1 &amp; 1 &amp; 1\\ 8 &amp; 4 &amp; 2 &amp; 1\\ 27 &amp; 9 &amp; 3 &amp; 1\\ 64 &amp; 16 &amp; 4 &amp; 1 \end{bmatrix}^{-1} \begin{bmatrix} 3\\ 5\\ 7\\ 9 \end{bmatrix} $ で求めることができ、その係数を使えば、
+で求めることができ、その係数を使えば、
+<img src="https://latex.codecogs.com/gif.latex?10&space;\rightarrow&space;?" />
 
-10 →　？
 
 を推定できる。
 
-実際この方法で、係数は、$(a,b,c,d) = (0,0,2,1)$と推定され、$y　=　2 x + 1$。すなわち、10　→　21　と推定される。
+実際この方法で、係数は、
+<img src="https://latex.codecogs.com/gif.latex?(a,b,c,d)=(0,0,2,1)" />
+
+と推定され、
+<img src="https://latex.codecogs.com/gif.latex?y=2x&plus;1" />
+
+すなわち、
+<img src="https://latex.codecogs.com/gif.latex?10\rightarrow21" />
+と推定される。
 
 この推定値は、あくまで３次式モデルによる推定であり、他にも答えは考えられる。実際、先の逆数のモデルだと答えが異なる。
 

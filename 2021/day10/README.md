@@ -97,6 +97,7 @@ b =
 のようなモデル式でもいいだろう。
 
 ひとまず3次式モデルとすると、与えられた４つのパターンは
+
 <img src="https://latex.codecogs.com/gif.latex?\begin{bmatrix}&space;1&1&1&1\\&space;8&4&2&1\\&space;27&9&3&1\\&space;64&16&4&1&space;\end{bmatrix}&space;\begin{bmatrix}&space;a\\b\\c\\d&space;\end{bmatrix}&space;=&space;\begin{bmatrix}&space;3\\5\\7\\9&space;\end{bmatrix}" />
 
 と書くことができる。よって係数は

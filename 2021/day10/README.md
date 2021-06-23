@@ -32,6 +32,7 @@ numpy
 
 
 よって、線形代数によると係数行列の逆行列が存在すれば、
+
 <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{a}=M^{-1}\boldsymbol{b}" />
 
 により、解
@@ -68,8 +69,10 @@ b =
 
 ### 問題
 
-<img src="https://latex.codecogs.com/gif.latex?1&space;\rightarrow&space;3\\&space;2&space;\rightarrow&space;5\\&space;3&space;\rightarrow&space;7\\&space;4&space;\rightarrow&space;9" />
-<img src="https://latex.codecogs.com/gif.latex?10&space;\rightarrow&space;?" />
+<img src="https://latex.codecogs.com/gif.latex?1&space;\rightarrow&space;3" />
+<img src="https://latex.codecogs.com/gif.latex?2&space;\rightarrow&space;5" />
+<img src="https://latex.codecogs.com/gif.latex?3&space;\rightarrow&space;7" />
+<img src="https://latex.codecogs.com/gif.latex?4&space;\rightarrow&space;9" />
 
 のとき、10はどうなるか？
 
@@ -77,8 +80,7 @@ b =
 
 まず、入力
 <img src="https://latex.codecogs.com/gif.latex?x" />
-
-と出力出力
+と出力
 <img src="https://latex.codecogs.com/gif.latex?y" />
 を繋ぐモデル式（適当な係数と、入出力の使い方）を作る。
 
@@ -88,8 +90,8 @@ b =
 
 などとしてみる。係数
 <img src="https://latex.codecogs.com/gif.latex?a,b,c,d" />
-
 の3次式モデルである。未知変数への拡張のしかたは他にもいくらでも考えられる。
+
 <img src="https://latex.codecogs.com/gif.latex?y&space;=&space;a&space;x^{-3}&space;&plus;&space;b&space;x^{-2}&space;&plus;&space;c&space;x^{-1}&space;&plus;&space;d" />
 
 のようなモデル式でもいいだろう。
@@ -98,9 +100,11 @@ b =
 <img src="https://latex.codecogs.com/gif.latex?\begin{bmatrix}&space;1&1&1&1\\&space;8&4&2&1\\&space;27&9&3&1\\&space;64&16&4&1&space;\end{bmatrix}&space;\begin{bmatrix}&space;a\\b\\c\\d&space;\end{bmatrix}&space;=&space;\begin{bmatrix}&space;3\\5\\7\\9&space;\end{bmatrix}" />
 
 と書くことができる。よって係数は
+
 <img src="https://latex.codecogs.com/gif.latex?\begin{bmatrix}&space;a\\b\\c\\d&space;\end{bmatrix}&space;=&space;\begin{bmatrix}&space;1&1&1&1\\&space;8&4&2&1\\&space;27&9&3&1\\&space;64&16&4&1&space;\end{bmatrix}^{-1}&space;\begin{bmatrix}&space;3\\5\\7\\9&space;\end{bmatrix}" />
 
 で求めることができ、その係数を使えば、
+
 <img src="https://latex.codecogs.com/gif.latex?10&space;\rightarrow&space;?" />
 
 
@@ -108,7 +112,6 @@ b =
 
 実際この方法で、係数は、
 <img src="https://latex.codecogs.com/gif.latex?(a,b,c,d)=(0,0,2,1)" />
-
 と推定され、
 <img src="https://latex.codecogs.com/gif.latex?y=2x&plus;1" />
 
@@ -119,7 +122,6 @@ b =
 この推定値は、あくまで３次式モデルによる推定であり、他にも答えは考えられる。実際、先の逆数のモデルだと答えが異なる。
 
 学習用のパターンを適当に４つ作り、適当にモデル式を作って係数を学習し、学習用パターンにない適当な入力を与えたときの出力を求めよ。（pythonコードで実現せよ）
-
 
 ### 回答
 

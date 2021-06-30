@@ -46,7 +46,7 @@ def main(argv):
   model = model1
   pattern_in, pattern_out = createPattern(4)
   params = learnModel(pattern_in, pattern_out, model)
-  input = np.random.randint(0, 100, 1)
+  input = np.random.randint(-100, 100, 1)
   output = inferModel(params, input, model)
 
   print('pattern1 = ', end='')

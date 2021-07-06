@@ -15,6 +15,6 @@ numpy
 
 ```powershell
 $ python main.py
-Keep戦略: 0.331
-Change戦略: 0.689
+Keep戦略   :  0.345
+Change戦略 :  0.646
 ```

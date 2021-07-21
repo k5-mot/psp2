@@ -18,10 +18,10 @@ def main():
   print('M = ')
   print(M)
   print()
-  print('a = ')
+  print('a = ', end='')
   print(a)
   print()
-  print('b = ')
+  print('b = ', end='')
   print(b)
 
 

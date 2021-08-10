@@ -10,9 +10,12 @@
 │    ├── day3
 │    ├── day4
 │    ├── day5
-│    ├── day6
+│    ├── day6_v1
 │    ├── day6_v2
-│    └── day9
+│    ├── day9
+│    ├── day10
+│    ├── day12
+│    └── day14
 └── README.md
 </pre>
 

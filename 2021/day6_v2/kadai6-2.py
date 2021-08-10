@@ -7,11 +7,12 @@ pd.set_option('display.unicode.east_asian_width', True)
 df = pd.read_csv('csv/mydata2.csv', index_col=0, skipinitialspace=True)
 
 # Categorize database
-df['moneyTotal'] = df['moneyIncreaseDiff'] / (df['moneyIncreaseRatio'] - 1)
+df['moneyTotal1'] = df['moneyIncreaseDiff'] / (df['moneyIncreaseRatio'] - 1)
+df['moneyTotal2'] = df['moneyTotal1'] + df['moneyIncreaseDiff']
 
 # Print results
-means_lion = df[df['favoriteAnimal'] == 'Lion']['moneyTotal'].mean()
-means_nook = df[df['favoriteAnimal'] == 'Tanuki']['moneyTotal'].mean()
+means_lion = df[df['favoriteAnimal'] == 'Lion']['moneyTotal2'].mean()
+means_nook = df[df['favoriteAnimal'] == 'Tanuki']['moneyTotal2'].mean()
 
 print('"Lion" の所持金平均   : ' + str(means_lion))
 print('"Tanuki" の所持金平均 : ' + str(means_nook))

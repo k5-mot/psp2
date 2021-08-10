@@ -1,18 +1,17 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
+# coding: utf-8
 import Rational as Rational
 
 
-# def pow(x, y):
-#   ret = 1
-#   while y > 0:
-#     ret *= x
-#     y -= 1
-#   return ret
+def pow_v1(x, y):
+  ret = 1
+  while y > 0:
+    ret *= x
+    y -= 1
+  return ret
 
 
-def pow(x, y):
+def pow_v2(x, y):
   ret = 1
   while (y > 0):
     if y & 1:
@@ -28,6 +27,6 @@ class RationalChild(Rational.Rational):
     print('分母=', self.den)
 
   def __pow__(self, y):
-    num = pow(self.num, y)
-    den = pow(self.den, y)
+    num = pow_v1(self.num, y)
+    den = pow_v1(self.den, y)
     return RationalChild(num, den)

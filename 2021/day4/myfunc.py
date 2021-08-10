@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
+# coding: utf-8
 
 def solve_sqrt(num):
   x = num

@@ -17,8 +17,8 @@ $ python d03.py
 ```
 
 <!--
-![come_init](./images/come.png)
+![come](./images/come.png)
 -->
 
-![come_tran](./images/come_sample.png)
+![come](./images/come1.png)
 

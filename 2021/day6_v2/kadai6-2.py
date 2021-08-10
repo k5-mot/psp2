@@ -1,9 +1,9 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
+# coding: utf-8
 import pandas as pd
 pd.set_option('display.unicode.east_asian_width', True)
 
-# Read database.
+# CSVファイルを読み込み
 df = pd.read_csv('csv/mydata2.csv', index_col=0, skipinitialspace=True)
 
 # Categorize database

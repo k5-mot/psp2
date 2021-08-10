@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
+# coding: utf-8
 import pandas as pd
 pd.set_option('display.unicode.east_asian_width', True)
 

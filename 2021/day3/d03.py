@@ -1,39 +1,33 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
+# coding: utf-8
 import turtle
 import math
 
 
-def come(x, y):
+def look(x, y):
   """
-  座標（x,y）を向いて，その方向に距離を半分だけ縮める
+  亀の向きを変えてマウスクリック方向に途中まで移動する
   """
   # カメの位置
   (xx, yy) = kame.position()
-  # カメの現在向いている角度
-  kame_head_angle = kame.heading()
-  if (kame_head_angle > 180):
-    kame_head_angle = kame_head_angle - 360
-  # 水平方向と、カメの位置-クリックした位置のなす角度
+  # カメの位置とクリックした位置の角度
   rad = math.atan2((y - yy), (x - xx))
-  degree = math.degrees(rad)
-  # カメを動かす距離
-  length = math.sqrt((xx - x) ** 2 + (yy - y) ** 2) / 2
-  # カメをクリックした点に近づかせる処理
-  angle = degree - kame_head_angle
-  kame.left(angle)
-  kame.forward(length)
+  deg = math.degrees(rad)
+  # カメの方向転換
+  kame.setheading(deg)
+  # カメの移動
+  distance = math.sqrt((x - xx) ** 2 + (y - yy) ** 2) / 2
+  kame.forward(distance)
 
 
 kame = turtle.Turtle()
 turtle.hideturtle()
 kame.shape('turtle')
-kame.pensize(10)
 
-turtle.onscreenclick(come)
+turtle.onscreenclick(look)
 
 ts = turtle.getscreen()
 tc = ts.getcanvas()
-tc.postscript(file="images/come.eps", colormode='color')
+tc.postscript(file="./images/look.eps", colormode='color')
 
 turtle.done()

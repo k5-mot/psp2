@@ -6,7 +6,9 @@ function、module
 
 ### 問題
 
-5の平方根を求めよ。
+5の平方根を求めよ。    
++ コピペして作った新しいソースコードをモジュールmyfunc.pyにする。書き換える部分を引数変数にして関数solve_sqrt()に仕立てる。
++ solve_sqrt5.pyの冒頭でimport myfuncと書いて、myfunc.solve_sqrt(5)により√5を求める。
 
 ### 回答
 

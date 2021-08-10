@@ -38,9 +38,9 @@ Tanuki
 ### 回答
 
 ```powershell
-$ python kadai6-2.py
-"Lion" の所持金平均   : 299999.9999999997
-"Tanuki" の所持金平均 : 26999.999999999978
+$ python3 kadai6-2.py
+"Lion" の所持金平均   : 299699.9999999997
+"Tanuki" の所持金平均 : 28499.999999999978
 
 「favoriteAnimal」が「Lion」の人の所持金の平均が多い
 ```

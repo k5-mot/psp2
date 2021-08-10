@@ -8,6 +8,7 @@ df = pd.read_csv('csv/mydata2.csv', index_col=0, skipinitialspace=True)
 
 # 所持金を計算(1:増加前、2:増加後)
 df['moneyTotal1'] = df['moneyIncreaseDiff'] / (df['moneyIncreaseRatio'] - 1)
+df['moneyTotal1'] = df['moneyTotal1'].round().astype('int')
 df['moneyTotal2'] = df['moneyTotal1'] + df['moneyIncreaseDiff']
 
 # 所持金の平均を計算

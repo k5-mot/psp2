@@ -1,4 +1,4 @@
-# day6 v2
+# day6 
 
 pandas
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# coding: utf-8
 import sys
 import numpy as np
 
@@ -29,10 +31,10 @@ def model2(input, term):
 
 
 def createPattern(size):
-    #pattern_in = np.random.randint(-100, 100, size)
-    #pattern_out = np.random.randint(-100, 100, size)
-    #pattern_in = np.array(pattern_in, dtype='float')
-    #pattern_out = np.array(pattern_out, dtype='float')
+    # pattern_in = np.random.randint(-100, 100, size)
+    # pattern_out = np.random.randint(-100, 100, size)
+    # pattern_in = np.array(pattern_in, dtype='float')
+    # pattern_out = np.array(pattern_out, dtype='float')
     pattern_in = np.array([1, 2, 3, 4], dtype='float')
     pattern_out = np.array([3, 5, 7, 9], dtype='float')
     return pattern_in, pattern_out

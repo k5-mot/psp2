@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 import numpy as np
-# from matplotlib import pyplot as plt
 import pandas as pd
 
 pd.set_option('display.unicode.east_asian_width', True)
@@ -18,10 +17,6 @@ G = np.array([[pR, pG, pB, pW, pK, pR],
               [pG, pB, pW, pK, pR, pG],
               [pB, pW, pK, pR, pG, pB],
               [pW, pK, pR, pG, pB, pW]])
-
-# 画像の表示
-# plt.imshow(G, vmin=0, vmax=255)
-# plt.show()
 
 # 画像を表に変換
 G = np.reshape(G, (24, 3))

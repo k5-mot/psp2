@@ -10,12 +10,11 @@ def MontyHall(tactics):
   出力
   - hit: 宝を当てたら1, 外れたら0
   '''
-  # Box Setup
   box = [1, 2, 3]
+  # 答え
   answer = random.choice(box)
+  # 最初の選択
   first_choice = random.choice(box)
-
-  # First Open
   box1 = box.copy()
   box1.remove(answer)
   if first_choice == answer:
@@ -25,7 +24,7 @@ def MontyHall(tactics):
     box_tmp.remove(first_choice)
     open = box_tmp[0]
 
-  # Second Open
+  # 二度目の選択
   box2 = box.copy()
   box2.remove(open)
   if tactics == 1:  # Keep
@@ -35,7 +34,7 @@ def MontyHall(tactics):
     box_tmp.remove(first_choice)
     second_choice = box_tmp[0]
 
-  # Hit Count
+  # 当たりのカウント
   if second_choice == answer:
     hit = 1
   else:

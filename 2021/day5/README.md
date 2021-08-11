@@ -33,7 +33,7 @@ x / y =  1/2
 ### 回答
 
 ```powershell
-$ python3 kadai5-2.py
+$ python kadai5-2.py
 x      =  1/2
 y      =  2
 x ** y =  1/4

@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
-import RationalChild as RationalChild
+import RationalChild as my
 
-x = RationalChild.RationalChild(5, 10)
+x = my.RationalChild(5, 10)
 y = 2
 print('x      = ', x)
 print('y      = ', y)

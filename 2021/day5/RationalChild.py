@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-import Rational as Rational
+import Rational as my
 
 
 def pow_v1(x, y):
@@ -21,7 +21,7 @@ def pow_v2(x, y):
   return ret
 
 
-class RationalChild(Rational.Rational):
+class RationalChild(my.Rational):
   def show(self):
     print('分子=', self.num)
     print('分母=', self.den)
